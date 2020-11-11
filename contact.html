@@ -86,7 +86,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 col-md-12 ">
                         <div class="hero__caption hero__caption3 text-center">
-                            <h1 data-animation="fadeInLeft" data-delay=".6s ">Contact us</h1>
+                            <h1 data-animation="fadeInLeft" data-delay=".6s ">Tutor Form</h1>
                         </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title">Get in Touch</h2>
+                    <h2 class="contact-title">Tutor Form</h2>
                 </div>
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
@@ -160,7 +160,17 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
+                                    <input class="form-control valid" name="age" id="age" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your age'" placeholder="Enter your age">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
                                     <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control valid" name="phone no" id="phone no" type="number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone no address'" placeholder="phone no">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -168,7 +178,13 @@
                                     <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="address" id="address" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter address'" placeholder="Enter address">
+                                </div>
+                            </div>
                         </div>
+                        
                         <div class="form-group mt-3">
                             <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                         </div>
