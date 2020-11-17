@@ -1,16 +1,11 @@
 <?php 
-$message = $_POST['message'];
-$name = $_POST['name'];
-$age = $_POST['age'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$subject = $_POST['subject'];
-$address = $_POST['address'];
+$submit = $_POST['submit'];
 
-$formcontent="From: $name \n Message: $message";
+
+$formcontent="From: $submit";
 $recipient = "rajkamalgautam2001@gmail.com";
-$subject = "Contact Form";
+$subject = "Contact Mail";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+mail($submit) or die("Error!");
 echo "Thank You!";
 ?>  
