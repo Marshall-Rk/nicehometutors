@@ -240,7 +240,7 @@ body {
   font-family: "Open Sans", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  background-color: #e2e2e2;
+  background-color: #570b61;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -438,11 +438,11 @@ h6 {
 }
 
 .btn--red {
-  background: #ffb937;
+  background: #2d0a32;
 }
 
 .btn--red:hover {
-  background: #ffb937;
+  background: #2d0a32;
 }
 
 /* ==========================================================================
@@ -752,7 +752,7 @@ input {
 
 .card-5 .card-heading {
   padding: 20px 0;
-  background: #cf07bf;
+  background: #2d0a32;
   -webkit-border-top-left-radius: 10px;
   -moz-border-radius-topleft: 10px;
   border-top-left-radius: 10px;
