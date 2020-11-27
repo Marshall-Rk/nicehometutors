@@ -44,6 +44,7 @@ $address = $_POST['address'];
 $phone1 = $_POST['phone1'];
 $phone2 = $_POST['phone2'];
 $course = $_POST['course'];
+$subjects = $_POST['subjects'];
 $board = $_POST['board'];
 $session = $_POST['session'];
 $gender = $_POST['gender'];
@@ -51,7 +52,7 @@ $when = $_POST['when'];
 $leclocation = $_POST['leclocation'];
 
 
-$formcontent = "Student Registration From: \n  $first_name $last_name \n Birthday: $birthday  \n E-mail: $email \n Location: $location \n Address: $address \n Phone no: $phone1 $phone2   \n Course: $course \n Board: $board \n Session: $session \n gender: $gender \n when: $when \n Lecture location: $leclocation  ";
+$formcontent = "Student Registration From: \n  $first_name $last_name \n Birthday: $birthday  \n E-mail: $email \n Location: $location \n Address: $address \n Phone no: $phone1 $phone2   \n Course: $course \n Subjects: $subjects \n Board: $board \n Session: $session \n gender: $gender \n when: $when \n Lecture location: $leclocation  ";
 
 $recipient = "rajkamalgautam2001@gmail.com";
 $subject = "Student Registration Form";
