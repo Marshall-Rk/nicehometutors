@@ -1,0 +1,742 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nice Home Tutors</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <?php
+    session_start();
+    if(isset($_SESSION['mailflag'])){
+echo "<div class=' white-text text-center'>";
+if($_SESSION['mailflag']=='sent'){
+    echo "MAIL WAS SENT SUCCEFULLY";
+}elseif($_SESSION['mailflag']=='unsent'){
+    echo "MAIL WAS NOT SENT SUCCEFULLY";
+    
+}    
+echo "</div>";
+         unset($_SESSION['mailflag']);
+    }
+    ?>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href="index.php">Home</a></li>
+                                                <li><a href="#1">Subjects</a></li>
+                                                <li><a href="#2">Plan</a></li>
+                                                <li><a href="#3">FAQ</a>
+                                                    <li><a href="#4">Testimonial</a>
+                                                 </li>
+                                                <li><a href="contact.html">Register as a Tutor</a></li>
+                                                <!-- Button -->
+                                               
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    
+    <main>
+      
+        <div class="slider-area slider-bg">
+            <div class="slider-active">
+           
+                <div class="single-slider d-flex align-items-center slider-height ">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-xl-5 col-lg-5 col-md-9 ">
+                                <div class="hero__caption ">
+                                    <span class="top" data-animation="fadeInLeft" data-delay=".3s">FIND TUTORS, TRAINERS & INSTITUTES NEAR YOU</span>
+                                    <h1 data-animation="fadeInLeft" data-delay=".6s ">Post Your Learning Requirement.</h1>
+                                    <p data-animation="fadeInLeft" data-delay=".8s">"Our purpose is to replace an empty mind with an open mind"</p>
+                               
+                                 
+                                    <div class="more-btn mt-20">
+                                        <a href="index2.html" class="btn">Book a free class</a>
+                                        
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="hero__img d-lg-block f-right"></div>
+                                    <img src="assets/img/hero/hero_right.png" alt="" data-animation="fadeInRight" data-delay="1s" style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                     
+                <!-- Single Slider -->
+               
+            </div>
+            <!-- Slider Shape -->
+       
+        </div>
+        <!-- Slider Area End -->
+    
+        <!-- Domain-search start -->
+        
+        <div class="domain-search-area section-bg1">
+        </br>
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-4 col-lg-5">
+                       
+                       <h2>Post Your Learning Requirement</h2>
+                       <p>50000+ Experienced Tutors | 100000+ Connected Students.</p>
+                   </div>
+                   <div class="col-xl-8 col-lg-7">
+                    <!--Hero form -->
+                    <div class="slider-btns">
+                        <!-- Hero-btn -->
+                         <a href="tel:9953953594"> 
+                        <button class="btn" ><i class="fa fa-phone fa-lg"></i></button> </a>  
+                        <a href="mailto:nicehometutors1@gmail.com"> <button class="btn"><i class="fa fa-envelope fa-lg"></i></button></a> 
+                        <a href="https://www.instagram.com/nicehometutors/"><button class="btn"><i class="fab fa-instagram fa-lg"></i> </button></a> 
+                      
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Domain-search End -->
+    <!--? Team -->
+    <section class="team-area section-padding40 section-bg1" id="1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12">
+                    <div class="section-tittle text-center mb-105"  >
+                        <h2>SUBJECTS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services1.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Physics</a></h5>
+                            <p>A science that deals with matter and energy and their interactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services2.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Mathematics</a></h5>
+                            <p>The science of numbers, quantities, and shapes and the relations between them.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services3.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Chemistry</a></h5>
+                            <p>Chemistry, the science that deals with the properties, composition, and structure of substances.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services4.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">Computer Science</a></h5>
+                            <p>Computer science is the study of algorithmic processes and computational machines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services5.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">English</a></h5>
+                            <p>The leading language of international discourse in today's world.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-cat">
+                        <div class="cat-icon">
+                            <img src="assets/img/icon/services6.png" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#">JEE/NEET</a></h5>
+                            <p>Preparation for admission to various undergraduate engineering and architecture courses in NITs, IIITs and other Centrally-Funded Technical Institutions (CFTIs)
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services End -->
+    <!--? Pricing Card Start -->
+    <section class="pricing-card-area fix" id="2">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="section-tittle text-center mb-90" >
+                        <h2>WHY NICE HOME TUTORS?</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                        <div class="card-top">
+                            <img src="assets/img/icon/price1.png" alt="">
+                            <h4>Free Demo Lecture</h4>
+                            <p>Get Registered</p>
+                        </div>
+                        
+                        <div class="card-bottom">
+                          
+                            <a href="tel:9953953594" class="borders-btn">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                        <div class="card-top">
+                            <img src="assets/img/icon/price2.png" alt="">
+                            <h4>Free on call Counselling</h4>
+                            <p>Get Registered</p>
+                        </div>
+                       
+                        <div class="card-bottom">
+                           
+                            <a href="tel:9953953594" class="borders-btn">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10">
+                    <div class="single-card text-center mb-30">
+                        <div class="card-top">
+                            <img src="assets/img/icon/price3.png" alt="">
+                            <h4>Compare, Hire and Learn</h4>
+                         <p>Get Registered</p>
+                        </div>
+                       
+                        <div class="card-bottom">
+                            
+                            <a href="tel:9953953594" class="borders-btn">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Card End -->
+    <!--? About-1 Area Start -->
+   <div class="blanktxt"> 
+   </br>
+</br>
+   </div>
+    <!-- About-1 Area End -->
+    <!--? About-2 Area Start -->
+    <section id="cards">
+        <div class="container py-2">
+            <div class="row pb-4">
+                <div class="col-12 text-center">
+                    <div class="display-3">Our Team</div>
+                </div>
+            </div>
+            <!-- cards -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="2.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : PANKAJ MISHRA</h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> M.Tech, B.Tech
+                                   </br><b>Teaching Experience:</b> 8 years</p>
+                                </br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="1.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : Vinay</h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> B.Sc, M.Sc, B.Ed
+                                     </br><b>Teaching Experience:</b> 21 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="3.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : Ankur </h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> B.com, CA
+                                    </br><b>Teaching Experience:</b> 10 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="https://i.picsum.photos/id/836/130/130.jpg?hmac=Sot_REUw5W-XSuE6FmCjT9JenhZfiNqZYs3AQbfrZsc" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : Muskan</h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> MA, B.Ed
+                                    </br><b>Teaching Experience:</b> 10 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : Nitika</h5>
+                                <p class=" text-capitalize text-bold small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> BA, MA In English
+                                    </br><b>Teaching Experience:</b> 10 years</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="user-picture">
+                                <img src="https://images.unsplash.com/photo-1582003457856-20898dd7e1ea?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="110" width="110" />
+                            </div>
+                            <div class="user-content">
+                                <h5 class="text-capitalize user-name">Alex Carry</h5>
+                                <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                <div class="small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                    <i class="fas fa-star text-light"></i>
+                                    <i class="fas fa-star text-light"></i>
+                                </div>
+                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
+                                    quia commodi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /cards -->
+    </section>
+
+</br>   
+</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- About-2 Area End -->
+    <!-- ask questions -->
+    <section class="ask-questions section-bg1 section-padding30 fix" id="3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9 col-md-10 ">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-90">
+                        <h2>Frequently ask questions</h2>
+                        <p>This is a list of answers to questions that people frequently ask about The Quotations Page. If you can't find your answer here, feel free to contact us by email.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-question d-flex mb-50">
+                        <span> Q.</span>
+                        <div class="pera">
+                            <h2>Will I have to pay in advance or Can I pay Session Wise ?</h2>
+                            <p>In monthly charge, payment is usually done in advance(Recommends) and in session wise class payment is usually done session wise.
+                                Book your Free Session Now</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-question d-flex mb-50">
+                        <span> Q.</span>
+                        <div class="pera">
+                            <h2>What happen if teacher discontinue class in between ?</h2>
+                            <p>If payment is made through us, Your amount will be refunded on pro-rata basis or other tutor will be arranged.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-question d-flex mb-50">
+                        <span> Q.</span>
+                        <div class="pera">
+                            <h2>To Whom I need to Pay ?</h2>
+                            <p>You can pay directly to tutor or You can also pay us. We will settle the amount with teacher only after asking you.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single-question d-flex mb-50">
+                        <span> Q.</span>
+                        <div class="pera">
+                            <h2>Will I get fees payment receipt ?</h2>
+                            <p>If payment is made through us, Yes we provide payment receipt on each and every fees payment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 ">
+                    <div class="more-btn text-center mt-20">
+                        <a href="mailto:nicehometutors1@gmail.com" class="btn">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End ask questions -->
+    <!--? Testimonial Area Start -->
+    <section class="testimonial-area section-bg1" id="4">    
+        <div class="container" >   
+            <div class="testimonial-wrapper">
+                <div class="row align-items-center justify-content-center">
+                    <div class=" col-lg-10 col-md-12 col-sm-11">
+                        <!-- Testimonial Start -->
+                        <div class="h1-testimonial-active">
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial text-center mt-55">
+                                <div class="testimonial-caption">
+                                    <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                    <p>They have the best teacher's and mentors. Thanks for all weather support.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                       
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>-Hritika</span>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial text-center mt-55">
+                                <div class="testimonial-caption">
+                                    <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                    <p>This is a very different experience as we learn math from the experts from IIT and Cambridge University. Though it’s an online program, I feel my teacher is there right next to me and instantly clarifies my doubts. After approching this institute, I have started scoring 95+ in school math exams.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                       
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>-Aditya</span>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial text-center mt-55">
+                                <div class="testimonial-caption">
+                                    <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                    <p>One of the best in the industry specially mam who is running it very professional and ethical environment to work with.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                       
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>-Ranjan</span>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Testimonial -->
+                            <div class="single-testimonial text-center mt-55">
+                                <div class="testimonial-caption">
+                                    <img src="assets/img/icon/quotes-sign.png" alt="" class="quotes-sign">
+                                    <p>Tutors are so motivational...They teach in a friendly manner which helps to understand easily.</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+                                       
+                                    </div>
+                                    <div class="founder-text">
+                                        <span>-Harsh</span>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--? Testimonial Area End -->
+</main>
+<footer>
+    <div class="footer-wrappr " data-background="assets/img/gallery/footer-bg.png">
+        <div class="footer-area footer-padding ">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <!-- logo -->
+                            <div class="footer-logo mb-25">
+                                <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            </div>
+                            <div class="footer-tittle mb-50">
+                                <p>If you can't find your answer here, feel free to contact us by Phone (9953953594)</p>
+                            </div>
+                            <!-- Form -->
+                            <div class="footer-form">
+                                <div id="mc_embed_signup">
+                                    <form target="_blank" action="tryform.php" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                        
+                                        <div class="more-btn mt-20">
+                                            <a href="tel:9953953594" class="btn">Contact us</a>
+                                            
+                                        </div>
+                                        <div class="mt-10 info"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- social -->
+                            <div class="footer-social mt-50">
+                                <a href="https://www.instagram.com/nicehometutors/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="mailto:nicehometutors1@gmail.com"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:9953953594"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1"></div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Contact</h4>
+                                <ul>
+                                    <li><a href="mailto:nicehometutors1@gmail.com">E-Mail</a></li>
+                                    <li><a href="https://www.instagram.com/nicehometutors/">Instagram</a></li>
+                                    <li><a href="tel:9953953594">Phone</a></li>
+                                    <li><a href="#">Facebook</a></li>
+                                  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Forms</h4>
+                                <ul>
+                                    <li><a href="contact.html">Tutor Form</a></li>
+                                    <li><a href="#">Student Form</a></li>
+                                   
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-copy-right text-center">
+                                <p>
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://bit.ly/official-nextgenpixel" target="_blank">Nextgenpixel</a>
+                               
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+<!-- JS here -->
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+<!-- Date Picker -->
+<script src="./assets/js/gijgo.min.js"></script>
+
+<!-- Video bg -->
+<script src="./assets/js/jquery.vide.js"></script>
+
+<!-- Nice-select, sticky -->
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<!-- Progress -->
+<script src="./assets/js/jquery.barfiller.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
+

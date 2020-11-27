@@ -42,3 +42,9 @@
    
     background-color:#420c4d;
 }
+
+@media (min-width: 320px) and (max-width: 680px) {
+.hero__caption{
+    margin-top: 8em;
+}
+}
