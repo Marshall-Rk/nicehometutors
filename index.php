@@ -72,7 +72,7 @@ echo "</div>";
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="index.php">Home</a></li>
+                                                <li><a href="index.php">Homee</a></li>
                                                 <li><a href="#1">Subjects</a></li>
                                                 <li><a href="#2">Plan</a></li>
                                                 <li><a href="#3">FAQ</a>
