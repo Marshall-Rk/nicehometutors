@@ -22,6 +22,7 @@ function sendMail($to, $subject, $msg)
         $mail->Port = 587;
         $mail->setFrom($sender_email, "Nice Home Tutors");
         $mail->addAddress($to);
+        $mail->addCC('nicehometutors1@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body = $msg;

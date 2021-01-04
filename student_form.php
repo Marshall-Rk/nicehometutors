@@ -24,6 +24,7 @@ function sendMail($to, $subject, $msg)
         $mail->Port = 587;
         $mail->setFrom($sender_email, "Nice Home Tutors");
         $mail->addAddress($to);
+        $mail->addCC('nicehometutors1@gmail.com');
         $mail->isHTML(true);
         $mail->Subject = $subject;
         $mail->Body = $msg;
@@ -33,7 +34,7 @@ function sendMail($to, $subject, $msg)
         $error = "There was an error while sending the mail but your registartion request has been submitted to us.";
         return false;
     }
-}
+}       
 if(isset($_POST['register_student'])){
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];

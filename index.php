@@ -72,7 +72,7 @@ echo "</div>";
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="index.php">Homee</a></li>
+                                                <li><a href="index.php">Home</a></li>
                                                 <li><a href="#1">Subjects</a></li>
                                                 <li><a href="#2">Plan</a></li>
                                                 <li><a href="#3">FAQ</a>
@@ -380,7 +380,7 @@ echo "</div>";
                     <div class="card shadow border-0">
                         <div class="card-body">
                             <div class="user-picture">
-                                <img src="https://i.picsum.photos/id/836/130/130.jpg?hmac=Sot_REUw5W-XSuE6FmCjT9JenhZfiNqZYs3AQbfrZsc" class="shadow-sm rounded-circle" height="110" width="110" />
+                                <img src="5.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
                             </div>
                             <div class="user-content">
                             </br>
@@ -397,7 +397,7 @@ echo "</div>";
                     <div class="card shadow border-0">
                         <div class="card-body">
                             <div class="user-picture">
-                                <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="110" width="110" />
+                                <img src="6.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
                             </div>
                             <div class="user-content">
                             </br>
@@ -414,20 +414,15 @@ echo "</div>";
                     <div class="card shadow border-0">
                         <div class="card-body">
                             <div class="user-picture">
-                                <img src="https://images.unsplash.com/photo-1582003457856-20898dd7e1ea?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="110" width="110" />
+                                <img src="4.jpeg" class="shadow-sm rounded-circle" height="110" width="110" />
                             </div>
                             <div class="user-content">
-                                <h5 class="text-capitalize user-name">Alex Carry</h5>
-                                <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
-                                <div class="small">
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star text-warning"></i>
-                                    <i class="fas fa-star-half-alt text-warning"></i>
-                                    <i class="fas fa-star text-light"></i>
-                                    <i class="fas fa-star text-light"></i>
-                                </div>
-                                <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
-                                    quia commodi.</p>
+                            </br>
+                                <h5 class="text-capitalize user-name">NAME : Manoj Goyal</h5>
+                                <p class=" text-capitalize text-bold small blockquote-footer">Professor</p>
+                            
+                                <p class="small  mb-0"><b>Qualification:</b> M.Philosophy
+                                    </br><b>Teaching Experience:</b> 21 years</p>
                             </div>
                         </div>
                     </div>
@@ -610,7 +605,7 @@ echo "</div>";
                                 <a href="index.php"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
                             </div>
                             <div class="footer-tittle mb-50">
-                                <p>If you can't find your answer here, feel free to contact us by Phone (9953953594)</p>
+                                <p>If you can't find your answer here, feel free to contact us by </br>Phone:+91 9953953594</br>E-Mail:nicehometutors1@gmail.com</p>
                             </div>
                             <!-- Form -->
                             <div class="footer-form">
@@ -656,7 +651,7 @@ echo "</div>";
                                 <h4>Forms</h4>
                                 <ul>
                                     <li><a href="contact.html">Tutor Form</a></li>
-                                    <li><a href="#">Student Form</a></li>
+                                    <li><a href="index2.html">Student Form</a></li>
                                    
                                    
                                 </ul>
@@ -691,6 +686,7 @@ echo "</div>";
 </div>
 
 <!-- JS here -->
+
 
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
